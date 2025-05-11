@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Request-Response</title>
+</head>
+<body>
+    <h1>Index - Ejemplo de Django Request / Response</h1>
+    <ul>
+        <li><a href="{% url 'request' %}">Request: User-Agent</a></li>
+        <li><a href="{% url 'app_attributes' %}">Request: Atributos</a></li>
+        <li><a href="{% url 'middleware' %}">Middleware (simple)</a></li>
+        <li><a href="/request/querydict/?nombre=Martín">QueryDict (con nombre)</a></li>
+        <li><a href="{% url 'response' %}">HttpResponse</a></li>
+        <li><a href="{% url 'response_subclasses' %}">HttpResponseNotFound (404)</a></li>
+        <li><a href="{% url 'json_response' %}">JsonResponse</a></li>
+        <li><a href="{% url 'stream_response' %}">StreamingHttpResponse</a></li>
+        <li><a href="{% url 'file_response' %}">FileResponse (descargar archivo)</a></li>
+        <li><a href="{% url 'response_base' %}">HttpResponse con Header</a></li>
+        <li><a href="{% url 'is_secure' %}">¿Es conexión segura?</a></li>
+        <li><a href="{% url 'home_view' %}">Vista Home</a></li>
+    </ul>
+</body>
+</html>
